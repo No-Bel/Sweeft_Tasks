@@ -20,8 +20,10 @@ class Task1 {
     }
 
      fun main() {
-        val ar = intArrayOf(2, 2, 5, 3, 4, 5, 3, 4)
+        val ar = intArrayOf(2, 2,5, 3, 4, 5, 3, 4)
         val n = ar.size
-        println("არ მეორდება რიცხვი: " + singleNumber(ar, n))
+         if (singleNumber(ar, n) == -1) {
+             println("ყველა რიცხვი მეორდება")
+         } else println("არ მეორდება რიცხვი: " + singleNumber(ar, n))
     }
 }
